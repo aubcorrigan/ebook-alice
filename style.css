@@ -1,0 +1,95 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: 'Merriweather', serif;
+  background-color: #fdfcf7; /* soft cream background */
+  color: #222; /* high contrast text */
+  line-height: 1.4em;
+  max-width: 50em; /* limits line length */
+  margin: auto;
+  padding: 1em;
+}
+
+/* Headings */
+h1, h2 {
+  margin-bottom: 0.5em;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.3em;
+  color: #4b2e83; /* purple accent */
+}
+
+/* Paragraphs */
+p {
+  margin-bottom: 1em;
+  text-align: left;
+}
+
+/* Navigation */
+.page-nav {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  background-color: #e3d9f3; /* light purple nav background */
+  padding: 0.5em;
+  margin: 1em 0;
+  border-radius: 5px;
+}
+
+.page-nav a {
+  text-decoration: none;
+  color: #4b2e83;
+  font-weight: bold;
+}
+
+.page-nav a:hover {
+  color: #2e1c55;
+  text-decoration: underline;
+}
+
+/* Floated Images */
+.float-left {
+  float: left;
+  margin: 0 1em 1em 0;
+  max-width: 200px;
+}
+
+.float-right {
+  float: right;
+  margin: 0 0 1em 1em;
+  max-width: 200px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  font-size: 0.85em;
+  color: #555;
+  border-top: 1px solid #ccc;
+  margin-top: 2em;
+  padding-top: 1em;
+}
+
+/* Make images responsive */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Clear floats after main content */
+main::after {
+  content: "";
+  display: block;
+  clear: both;
+}
